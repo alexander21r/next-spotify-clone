@@ -17,8 +17,8 @@ const Modal: React.FC<ModalProps> = ({
   children,
 }) => {
   return (
-    <Dialog.Root open={isOpen} defaultOpen={isOpen} onOpenChange={onChange}>
-      <Dialog.Portal>
+    <Dialog.Root open={isOpen} defaultOpen={isOpen} onOpenChange={onChange} >
+      <Dialog.Portal >
         <Dialog.Overlay
           className="
             bg-neutral-900/90 
@@ -38,7 +38,6 @@ const Modal: React.FC<ModalProps> = ({
             max-h-full 
             h-full 
             md:h-auto 
-            md:max-h-[85vh] 
             w-full 
             md:w-[90vw] 
             md:max-w-[450px] 
